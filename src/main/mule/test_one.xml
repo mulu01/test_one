@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="test_oneFlow" doc:id="64b32cf2-c59b-4751-b0d5-b898be1fe872" >
 		<http:listener doc:name="Listener" doc:id="06a0902c-99f5-425f-8b94-acb815202da5" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value="Hello World" doc:name="Set Payload" doc:id="26f0f3e0-dbaf-4034-8d5d-3ceb7d4293eb" />
 		<logger level="INFO" doc:name="Logger" doc:id="22fe84f9-4250-4edb-abfb-213389cf5253" />
 	</flow>
 </mule>
